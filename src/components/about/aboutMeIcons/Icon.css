@@ -1,0 +1,99 @@
+/* src/components/Icon.css */
+/* Style for the icon */
+/* Style for the icon */
+.icon-fontawesome {
+  width: 50px; /* Default size */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Spacing between icon and text */
+  background-color: aqua; /* Background color */
+  border-radius: 10%; /* Rounded corners for softer hexagon */
+  clip-path: polygon(
+    50% 0%, /* Top center */
+    100% 25%, /* Top-right corner */
+    100% 75%, /* Bottom-right corner */
+    50% 100%, /* Bottom center */
+    0% 75%, /* Bottom-left corner */
+    0% 25% /* Top-left corner */
+  ); /* Hexagonal shape */
+}
+.icon-fontawesome svg {
+  width: 40%; /* Scale the icon to fit inside the container */
+  height: 40%; /* Scale the icon to fit inside the container */
+  color:  #ff6347; /* Adjust color as needed */
+  
+}
+/* Ensure this class is applied correctly in the React component */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 150px;
+  box-sizing: border-box;
+  
+  
+}
+
+
+/* Style for the description text */
+.icon-description {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 480px) {
+  .icon-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+
+  .icon-fontawesome {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px;
+
+  }
+
+  .icon-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    max-width: 50%;
+    width: 50%;
+    margin: 10px 0; /* Adjust margin for tablets */
+  }
+
+  .icon-fontawesome {
+    width: 90px; /* Adjust size for medium screens */
+    height: 90px;
+    
+  }
+
+  .icon-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon-container {
+    max-width: calc(25% - 20px); /* Four columns on large devices */
+  }
+
+  .icon-fontawesome {
+    width: 100px; /* Default size for large screens */
+    height: 100px;
+    
+  }
+
+  .icon-description {
+    font-size: 0.9rem;
+  }
+}
