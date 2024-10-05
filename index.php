@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,4 +12,5 @@
   <h1><a href="about.html">here</a></h1>
 <script src="index.js"></script>
 </body>
-</html>
+</html>'
+?>
