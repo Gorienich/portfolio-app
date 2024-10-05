@@ -1,0 +1,101 @@
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Header Animation keyframes */
+@keyframes slideInFromTopRight {
+  0% {
+    opacity: 0;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Styling for the main container */
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Lower z-index for main content */
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 100vh; /* Full viewport height without causing overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f06, rgb(48, 124, 255));
+  background-size: 400% 400%;
+  animation: gradientAnimation 9s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientAnimation {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/* Common text styles */
+.main h1, .main h2, .main p {
+opacity: 0; /* Ensure text is hidden initially */
+}
+
+/* Animation for the main heading */
+.main h1 {
+animation: fadeIn 1.2s ease-in-out forwards;
+animation-delay: 0.3s; /* Adding a slight delay to the start */
+}
+
+/* Highlight styling and animation */
+.highlight {
+  color: #ff401e; /* Tomato color */
+  animation: slideIn 2s ease-in-out forwards;
+  animation-delay: 0.5s; /* Adding a slight delay to the start */
+}
+
+.highlightFrontend, .highlightBackend, .highlightFullDev {
+  font-weight: bolder;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Color specifics */
+.highlightFrontend {
+  color: gold;
+}
+.highlightBackend {
+  color: aqua;
+}
+.highlightFullDev {
+  color: rgb(0, 255, 98);
+}
+
+/* Animation for the subheading */
+.main h2 {
+margin-top: 20px;
+animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+/* Animation for the paragraph */
+.main p {
+padding: 20px;
+font-size: 18px;
+line-height: 2;
+color: black;
+font-weight: bold;
+animation: fadeIn 2.5s ease-in-out 1.5s forwards;
+}
+
+
