@@ -1,0 +1,67 @@
+/* General reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Media Query: Mobile */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+  .intro h2 {
+    font-size: 1.2rem;
+  }
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Desktop Intro Section */
+.intro {
+  height: 90vh;
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background: linear-gradient(120deg, #ff6b6b, #f7b42c, #42a5f5, #1e88e5);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.intro h1, .intro h2, .intro p {
+  margin-bottom: 1rem;
+}
+
+.highlight{
+  color: tomato;
+  font-weight: bolder;
+}
+
+.highlightFullDev {
+  color: azure;
+  font-weight: bolder;
+}
+
+.highlightFrontend {
+  color: #009405;
+  font-weight: bolder;
+}
+
+.highlightBackend {
+  color: blue;
+  font-weight: bolder;
+}
