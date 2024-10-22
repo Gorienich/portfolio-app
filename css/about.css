@@ -230,7 +230,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 0 1em aqua, 0 0 2em red;
   border: solid goldenrod;
-  background: url("static/wood.png");
+  background: url("static\wood.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
