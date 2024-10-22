@@ -17,5 +17,14 @@ fetch('header.html')
       menu.classList.remove("menu-active");
       menu.classList.add("menu-inactive");
     });
+
+    // Close the menu when a link is clicked
+    const menuLinks = menu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove("menu-active");
+        menu.classList.add("menu-inactive");
+      });
+    });
   })
   .catch(error => console.error('Error loading header:', error));
