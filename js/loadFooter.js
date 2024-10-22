@@ -2,7 +2,7 @@ fetch('footer.html')
   .then(response => response.text())
   .then(data => {
     // Load the footer content into the global-footer element
-    document.getElementById('globalFooter').innerHTML = data;
+    document.getElementById('global-footer').innerHTML = data;
 
     // Now the footer is loaded, you can safely add event listeners
 
