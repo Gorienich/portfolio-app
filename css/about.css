@@ -184,6 +184,10 @@ h2 {
     border-radius: 20px;
     width: 0; /* Start at 0% width */
     transition: width 2s ease-in-out; /* Smooth transition for the skill bar growth */
+    transition: width 2s ease-in-out;
+    background: linear-gradient(120deg, black,rgb(68, 38, 38), rgb(255, 0, 0), yellow);
+    background-size: 125% 350%;
+    animation: gradientAnimation 3s ease infinite;
 }
 
 /* button top-to-scroll */
