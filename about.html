@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="about-container">
       <div class="pic">
         <img src="static/me.png" alt="My picture">
@@ -135,7 +135,25 @@
 
       </div>
     </div>
-
+    <div class="projects-container highlight-border">
+      <div class="projects-filter-mobile">
+        <select name="projectsFilter" id="projectsFilter">
+          <option value="all">All</option>
+          <option value="java">Java</option>
+          <option value="React">React</option>
+          <option value="python">Python</option> 
+          <option value="websites">PHP</option> <!-- Changed to match the object key -->
+        </select>
+      </div>
+      <div class="projects-filter">
+        <button id="all">All</button>
+        <button id="java">Java</button>
+        <button id="react">React</button>
+        <button id="python">Python</button> 
+        <button id="websites">PHP</button> <!-- Match with data object key -->
+      </div>
+      <div id="projects-grid" class="projects"></div>
+    </div>
   </main>
   <div id="contact">
     <footer id="global-footer"></footer>
@@ -145,5 +163,4 @@
   <script src="js/loadHeader.js"></script>
   <script src="js/loadFooter.js"></script>
 </body>
-
 </html>
