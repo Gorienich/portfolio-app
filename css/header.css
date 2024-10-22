@@ -1,8 +1,4 @@
-.global-header{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 /* Mobile and Desktop Headers */
 .headerMobile {
   display: none; /* Hide by default for desktop */
@@ -11,7 +7,6 @@
 
 .header {
   width: 100%;
-  height: 10vh;
   background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
   padding: 1rem;
   display: flex;
@@ -26,14 +21,16 @@
 }
 
 .header a {
-    color: aqua;
+  color: aqua;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: all ease 0.5s;
 }
 
 .header a:hover{
   color: azure;
   font-size: 1.25rem;
+  transition: all ease 0.5s;
 }
 
 /* Responsive Styles for Mobile Header */
@@ -78,7 +75,7 @@
 
 .menu a {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1rem;
   text-decoration: none;
 }
@@ -94,6 +91,7 @@
     align-items: center;
     padding: 1rem;
     background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
+    animation: colorChangeRightToLeft 10s linear infinite;
   }
 
   .intro h1 {

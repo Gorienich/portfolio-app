@@ -4,42 +4,39 @@
   box-sizing: border-box;
 }
 
-.footer {
-  width: 100%;
-  background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
-  position: absolute;
+a{
+  text-decoration: none;
+  color: aqua;
+}
+a:hover{
+  color: azure;
+}
+
+.footer-content {
+  position: relative;
   bottom: 0;
   left: 0;
+  z-index: 0;
+  width: 100%;
+  background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
   display: flex;
   justify-content: center;
   align-items: center;
   color: goldenrod;
-
-  /* Hidden by default on mobile */
-}
-
-.back-to-top {
-
-  cursor: pointer;
-  text-align: center;
-  padding: 10px;
-  font-size: 2rem;
-  background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
-}
-
-.footer-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   text-align: center;
-}
-
-.footer-section h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 0px 0px 10px yellow;
+}
+.footer-section, .footer-contact{
+  padding: 0.8rem;
+}
+.footer-section h2 {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 2px aqua;
 }
 
 .icons {
@@ -65,10 +62,11 @@
 .icon-box:hover img {
   transform: scale(1.12);
   box-shadow: 0px 0px 12px goldenrod;
+  transition: all ease 0.3s;
 }
 
 .footer-contact div {
-  margin: 5px 0;
+  margin: 1rem 0;
 }
 button{
   background: transparent;
@@ -84,11 +82,9 @@ button{
 
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
-  .footer {
-    display: none; /* Hidden by default on mobile */
+  .footer-content{
+    flex-direction: column;
   }
 
-  #toggleFooter {
-    display: block;
-  }
+
 }
