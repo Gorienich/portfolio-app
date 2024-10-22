@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: aqua;
+}
+a:hover{
+  color: azure;
+}
+
+.footer-content {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footer-section, .footer-contact{
+  padding: 0.8rem;
+}
+.footer-section h2 {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 2px aqua;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icon-box {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.icon-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box:hover img {
+  transform: scale(1.12);
+  box-shadow: 0px 0px 12px goldenrod;
+  transition: all ease 0.3s;
+}
+
+.footer-contact div {
+  margin: 1rem 0;
+}
+button{
+  background: transparent;
+  border: none;
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 768px) {
+  .footer {
+    display: block;
+  }
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .footer-content{
+    flex-direction: column;
+  }
+
+
+}
