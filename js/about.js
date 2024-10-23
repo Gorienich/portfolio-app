@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
     ],
     React: [
-      { id: 3, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
+      { id: 3, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask', image: 'static/project_icons/openAI.png' },
       { id: 4, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
     ],
     websites: [
