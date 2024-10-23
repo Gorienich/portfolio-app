@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 6, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' }
     ],
     python: [
-      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/encoder-decoder%20transfer', image: 'static/project_icons/python1.png' },
+      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
       { id: 8, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/lock%20master', image: 'static/project_icons/python2.png' }
     ],
     all: []
