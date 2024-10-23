@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 4, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
     ],
     websites: [
-      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://github.com/Gorienich/optimed', image: 'static/project_icons/optimed.jpg' },
+      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
       { id: 6, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' }
     ],
     python: [
