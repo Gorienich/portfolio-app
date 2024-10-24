@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ],
     websites: [
       { id: 4, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
-      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' }
+      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://gorienich.github.io/Smeta/', image: 'static/project_icons/smeta.png' }
     ],
     python: [
       { id: 6, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
