@@ -41,12 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
     ],
     websites: [
       { id: 4, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
-      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://gorienich.github.io/Smeta/', image: 'static/project_icons/smeta.png' }
+      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://gorienich.github.io/Smeta/', image: 'static/project_icons/smeta.png' },
+      { id: 6, name: 'Guide', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/index.html', image: 'static/project_icons/bakyHeader.png' }
     ],
     python: [
-      { id: 6, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
-       { id: 7, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
-      { id: 8, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python2.png' }
+      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
+       { id: 8, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
+      { id: 9, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python2.png' }
     ],
     all: []
   };
