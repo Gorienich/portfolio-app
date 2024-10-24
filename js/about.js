@@ -37,15 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
     ],
     React: [
-      { id: 3, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
-      { id: 4, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
+      { id: 3, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
     ],
     websites: [
-      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
-      { id: 6, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' }
+      { id: 4, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
+      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' }
     ],
     python: [
-      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
+      { id: 6, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
+       { id: 7, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
       { id: 8, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python2.png' }
     ],
     all: []
