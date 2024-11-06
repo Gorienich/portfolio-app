@@ -143,8 +143,12 @@ opacity: 0;
   text-shadow: 0 0 2px azure;
 }
 
-/* skills section */#skills {
-    padding: 2rem;
+/* skills section */
+#skills {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin:  0 auto;
 }
 
 h2 {
