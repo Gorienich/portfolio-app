@@ -16,75 +16,104 @@ a:hover{
   position: relative;
   bottom: 0;
   left: 0;
-  z-index: 0;
+  z-index: 5;
   width: 100%;
   background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: goldenrod;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 20px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-}
-.footer-section, .footer-contact{
-  padding: 0.8rem;
-}
-.footer-section h2 {
-  margin-bottom: 10px;
-  text-shadow: 0px 0px 2px aqua;
+  font-family: Arial, sans-serif;
 }
 
-.icons {
+
+.footer-content h2{
+  color: #D8B6E3;
+  text-shadow: red 0 0 8px;
+}
+
+.footer-content .icons {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 300px; /* Limit width to prevent icons from spreading too far apart */
+  border-radius: 15px; /* Rounded edges for a softer look */
 }
 
-.icon-box {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.5rem;
-}
 
-.icon-box img {
-  width: 100%;
-  height: 100%;
+.footer-content .icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #D8B6E3;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.icon-box:hover img {
-  transform: scale(1.12);
-  box-shadow: 0px 0px 12px goldenrod;
-  transition: all ease 0.3s;
+
+/* Specific color styling for each icon */
+#whatsappShare i {
+  color: #06ab43; /* WhatsApp green */
+  font-weight: bold;
 }
 
-.footer-contact div {
-  margin: 1rem 0;
-}
-button{
-  background: transparent;
-  border: none;
+#facebookShare i {
+  color: #1877F2; /* Facebook blue */
+  font-weight: bold;
 }
 
-/* Media query for desktop */
-@media screen and (min-width: 768px) {
-  .footer {
-    display: block;
-  }
+#telegramShare i {
+  color: #0088CC; /* Telegram blue */
+  font-weight: bold;
 }
 
-/* Media query for mobile */
-@media screen and (max-width: 768px) {
-  .footer-content{
-    flex-direction: column;
-  }
-
-
+#vk i {
+  color: #4C75A3; /* VK blue */
+  font-weight: bold;
 }
+
+#twitter i {
+  color: #1DA1F2; /* Twitter blue */
+  font-weight: bold;
+}
+
+#linkedIN i {
+  color: #0077B5; /* LinkedIn blue */
+  font-weight: bold;
+}
+
+.footer-content .icon-box:hover {
+  background-color: #05ffde;
+  transform: scale(1.1);
+}
+
+.footer-content .icon-box i {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.footer-content .contact {
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.footer-content .contact div {
+  margin-bottom: 10px;
+}
+
+
+.footer-content p {
+  margin: 20px;
+  font-size: 0.85em;
+  color: #bbb;
+}
+
+
+
