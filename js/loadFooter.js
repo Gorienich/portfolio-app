@@ -9,22 +9,6 @@ fetch('footer.html')
     /* Share buttons */
     const whatsappShareButton = document.getElementById("whatsappShare");
     const facebookShareButton = document.getElementById("facebookShare");
-    const instagramShareButton = document.getElementById("instagramShare");
-    const tiktokShareButton = document.getElementById("tiktokShare");
-    const vk = document.getElementById("vk");
-
-    // Add event listeners
-    whatsappShareButton.addEventListener('click', shareOnWhatsApp);
-    facebookShareButton.addEventListener('click', shareOnFacebook);
-    instagramShareButton.addEventListener('click', shareOnInstagram);
-    tiktokShareButton.addEventListener('click', shareOnTiktok);
-    vk.addEventListener('click', shareOnVK)
-  })
-  .catch(error => console.error('Error loading footer:', error));
-
-    /* Share buttons */
-    const whatsappShareButton = document.getElementById("whatsappShare");
-    const facebookShareButton = document.getElementById("facebookShare");
     const telegramShare = document.getElementById("telegramShare");
     const twitter = document.getElementById("twitter");
     const vk = document.getElementById("vk");
