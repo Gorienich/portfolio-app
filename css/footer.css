@@ -31,6 +31,9 @@ a:hover{
   color: #D8B6E3;
   text-shadow: red 0 0 8px;
 }
+.contact div{
+margin-right: 8px;
+}
 .contact i{
   color: #D8B6E3;
   padding-top: 8px;
