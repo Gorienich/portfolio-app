@@ -31,7 +31,10 @@ a:hover{
   color: #D8B6E3;
   text-shadow: red 0 0 8px;
 }
-
+.contact i{
+  color: #D8B6E3;
+  padding-top: 8px;
+}
 .footer-content .icons {
   display: flex;
   flex-wrap: wrap;
