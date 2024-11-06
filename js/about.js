@@ -34,20 +34,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const projectData = {
     java: [
       { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.jpg' },
-      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
+      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/DataStructure.jpg' }
     ],
     React: [
-      { id: 3, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
+      { id: 3, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
+      { id: 4, name: 'Todo list', description: 'React/Node.js', githubLink: 'https://github.com/Gorienich/My-React/tree/main/todo', image: 'static/project_icons/todoListReact.png' }
     ],
     websites: [
-      { id: 4, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/index.html', image: 'static/project_icons/optimed.jpg' },
-      { id: 5, name: 'Smeta', description: 'PHP', githubLink: 'https://gorienich.github.io/Smeta/', image: 'static/project_icons/smeta.png' },
-      { id: 6, name: 'Guide', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/index.html', image: 'static/project_icons/bakyHeader.png' }
+      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://github.com/Gorienich/optimed', image: 'static/project_icons/optimed.jpg' },
+      { id: 6, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' },
+      { id: 7, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
     ],
     python: [
-      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python1.png' },
-       { id: 8, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
-      { id: 9, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python2.png' }
+      { id: 8, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/encoder-decoder%20transfer', image: 'static/project_icons/python1.png' },
+      { id: 9, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/lock%20master', image: 'static/project_icons/python2.png' }
     ],
     all: []
   };
