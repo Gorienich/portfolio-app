@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ],
     websites: [
       { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://github.com/Gorienich/optimed', image: 'static/project_icons/optimed.jpg' },
-      { id: 6, name: 'Smeta', description: 'PHP', githubLink: 'https://github.com/Gorienich/Smeta', image: 'static/project_icons/smeta.png' },
+      { id: 6, name: 'Repair-estimate', description: 'PHP', githubLink: 'gorienich.github.io/Repair-estimate/', image: 'static/project_icons/smeta.png' },
       { id: 7, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
     ],
     python: [
