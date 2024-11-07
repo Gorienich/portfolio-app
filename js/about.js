@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   // Handle progress bars
   const progressBars = document.querySelectorAll('.progress');
   progressBars.forEach(bar => {
@@ -33,25 +33,25 @@
   // Project data
   const projectData = {
     java: [
-      { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.jpg' },
-      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
+      { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.png' },
+      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/DataStructure.png' }
     ],
     websites: [
-      { id: 3, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.jpg' },
-      { id: 4, name: 'Repair-estimate', description: 'PHP', githubLink: 'https://github.com/Gorienich/Repair-estimate', image: 'static/project_icons/smeta.png' },
-      { id: 5, name: 'Tour Guide', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/', image: 'static/project_icons/bakyHeader.png' },
-      { id: 6, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
+      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.png' },
+      { id: 6, name: 'Repair estimate', description: 'PHP', githubLink: 'https://github.com/Gorienich/Repair-estimate', image: 'static/project_icons/smeta.png' },
+      { id: 4, name: 'Giude Tours', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/', image: 'static/project_icons/bakyHeader.png' },
+      { id: 7, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
     ],
     python: [
-      { id: 7, name: 'Lock Master', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python1.png' },
-      { id: 8, name: 'Encoder-Decoder Transfer', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python2.png' },
-      { id: 9, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' }
+      { id: 8, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python1.png' },
+      { id: 3, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' },
+      { id: 9, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python2.png' }
     ],
     all: []
   };
   
   // Combine all projects into 'all' category
-  projectData.all = [...projectData.java,  ...projectData.websites, ...projectData.python];
+  projectData.all = [...projectData.java, ...projectData.websites, ...projectData.python];
   
   // Sort each category by description
   Object.keys(projectData).forEach(category => {
