@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
   // Handle progress bars
   const progressBars = document.querySelectorAll('.progress');
   progressBars.forEach(bar => {
