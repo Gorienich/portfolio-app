@@ -37,15 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
     ],
     websites: [
-      { id: 3, name: 'Optimed', description: 'PHP', githubLink: 'https://github.com/Gorienich/optimed', image: 'static/project_icons/optimed.jpg' },
-      { id: 4, name: 'Repair-estimate', description: 'PHP', githubLink: 'gorienich.github.io/Repair-estimate', image: 'static/project_icons/smeta.png' },
-      { id: 5, name: 'Tour Guide', description: 'PHP', githubLink: 'gorienich.github.io/Repair-estimate', image: 'static/project_icons/smeta.png' },
+      { id: 3, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.jpg' },
+      { id: 4, name: 'Repair-estimate', description: 'PHP', githubLink: 'https://github.com/Gorienich/Repair-estimate', image: 'static/project_icons/smeta.png' },
+      { id: 5, name: 'Tour Guide', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/', image: 'static/project_icons/bakyHeader.png' },
       { id: 6, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
     ],
     python: [
       { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/encoder-decoder%20transfer', image: 'static/project_icons/python1.png' },
       { id: 8, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/lock%20master', image: 'static/project_icons/python2.png' },
-      { id: 9, name: 'OpenAI', description: 'Python', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' }
+      { id: 9, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' }
     ],
     all: []
   };
