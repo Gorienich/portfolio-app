@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Set up event listeners for category buttons
   document.getElementById('all').addEventListener('click', () => handleCategoryChange('all'));
   document.getElementById('java').addEventListener('click', () => handleCategoryChange('java'));
-  document.getElementById('react').addEventListener('click', () => handleCategoryChange('React'));
   document.getElementById('python').addEventListener('click', () => handleCategoryChange('python'));
   document.getElementById('websites').addEventListener('click', () => handleCategoryChange('websites')); // Updated
   
