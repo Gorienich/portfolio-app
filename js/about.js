@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // Project data
   const projectData = {
     java: [
-      { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.png' },
-      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/DataStructure.png' }
+      { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.jpg' },
+      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/DataStructure.jpg' }
     ],
     websites: [
-      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.png' },
+      { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.jpg' },
       { id: 6, name: 'Repair estimate', description: 'PHP', githubLink: 'https://github.com/Gorienich/Repair-estimate', image: 'static/project_icons/smeta.png' },
       { id: 4, name: 'Giude Tours', description: 'PHP', githubLink: 'https://gorienich.github.io/Rafi-Tours/', image: 'static/project_icons/bakyHeader.png' },
       { id: 7, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
