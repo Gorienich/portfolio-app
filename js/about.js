@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const projectData = {
     java: [
       { id: 1, name: 'Object Oriented', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-OOP', image: 'static/project_icons/Oop.jpg' },
-      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/DataStructure.jpg' }
+      { id: 2, name: 'Data Structure', description: 'Java', githubLink: 'https://github.com/Gorienich/JAVA-Data_Structure-Arrays', image: 'static/project_icons/dataStructure.jpg' }
     ],
     websites: [
       { id: 5, name: 'Optimed', description: 'PHP', githubLink: 'https://gorienich.github.io/optimed/', image: 'static/project_icons/optimed.jpg' },
