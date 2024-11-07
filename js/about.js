@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 6, name: 'flying Controller', description: 'PHP', githubLink: 'https://github.com/Gorienich/Fly-project-/tree/main/Flyproject/app/NewProjectTest1', image: 'static/project_icons/Flyproject.png' }
     ],
     python: [
-      { id: 7, name: 'Lock Master', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/encoder-decoder%20transfer', image: 'static/project_icons/python1.png' },
-      { id: 8, name: 'Encoder-Decoder Transfer', description: 'Python', githubLink: 'https://github.com/Gorienich/python/tree/main/lock%20master', image: 'static/project_icons/python2.png' },
+      { id: 7, name: 'Lock Master', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/lockMaster', image: 'static/project_icons/python1.png' },
+      { id: 8, name: 'Encoder-Decoder Transfer', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/encoder', image: 'static/project_icons/python2.png' },
       { id: 9, name: 'OpenAI', description: 'Flask', githubLink: 'https://github.com/Gorienich/Flask/tree/main/openAI', image: 'static/project_icons/openAI.png' }
     ],
     all: []
