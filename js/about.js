@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'Commercial website and content system focused on HOT packages, comparison pages and lead-generation journeys.',
         liveLink: 'https://hot-sales.co.il/',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/bakyHeader.png'
+        image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
       }
     ],
     security: [
@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
 
 
