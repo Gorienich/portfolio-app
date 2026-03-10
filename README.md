@@ -28,4 +28,4 @@ Showcasing projects that incorporate front-end and back-end technologies.
 
 Working with both monolithic and microservices architectures for scalable and multi-platform applications.
 
-📌 Check out my projects and feel free to reach out for collaboration or discussions!
+📌 Check out my projects and feel free to reach out for collaboration or discussions! 
