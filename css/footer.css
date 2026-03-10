@@ -1,125 +1,49 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-a{
-  text-decoration: none;
-  color: aqua;
-}
-a:hover{
-  color: azure;
-}
-
 .footer-content {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  background: linear-gradient(370deg, black, rgb(105, 0, 128), black);
-  padding: 20px;
+  background: linear-gradient(115deg, rgba(0,0,0,0.96), rgba(105,0,128,0.92), rgba(0,0,0,0.96));
+  padding: 2rem 1rem;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-
-.footer-content h2{
-  color: #D8B6E3;
-  text-shadow: red 0 0 8px;
-}
-.contact div{
-margin-right: 8px;
-}
-.contact i{
-  color: #D8B6E3;
-  padding-top: 8px;
-}
-.footer-content .icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  margin: 0 auto;
-  padding: 10px;
-  max-width: 300px; /* Limit width to prevent icons from spreading too far apart */
-  border-radius: 15px; /* Rounded edges for a softer look */
+.footer-content h2 {
+  color: #f7cadc;
+  margin-bottom: 1rem;
 }
 
-
-.footer-content .icon-box {
-  width: 50px;
-  height: 50px;
-  background-color: #D8B6E3;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+.footer-content a {
+  color: #8ff6ff;
+  text-decoration: none;
 }
 
-
-/* Specific color styling for each icon */
-#whatsappShare i {
-  color: #06ab43; /* WhatsApp green */
-  font-weight: bold;
-}
-
-#facebookShare i {
-  color: #1877F2; /* Facebook blue */
-  font-weight: bold;
-}
-
-#telegramShare i {
-  color: #0088CC; /* Telegram blue */
-  font-weight: bold;
-}
-
-#vk i {
-  color: #4C75A3; /* VK blue */
-  font-weight: bold;
-}
-
-#twitter i {
-  color: #1DA1F2; /* Twitter blue */
-  font-weight: bold;
-}
-
-#linkedIN i {
-  color: #0077B5; /* LinkedIn blue */
-  font-weight: bold;
-}
-
-.footer-content .icon-box:hover {
-  background-color: #05ffde;
-  transform: scale(1.1);
-}
-
-.footer-content .icon-box i {
-  font-size: 1.5em;
+.footer-content a:hover {
   color: #fff;
 }
 
-.footer-content .contact {
-  margin-top: 15px;
-  font-size: 1em;
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem 1.2rem;
+  margin-bottom: 1.25rem;
 }
 
-.footer-content .contact div {
-  margin-bottom: 10px;
+.contact i {
+  color: #f7cadc;
+  margin-right: 0.35rem;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+}
 
 .footer-content p {
-  margin: 20px;
-  font-size: 0.85em;
-  color: #bbb;
+  color: rgba(255,255,255,0.7);
 }
-
-
-
