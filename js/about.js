@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'CRM-oriented technology presentation covering sales operations, dashboards, lead workflows and business tooling direction.',
         liveLink: 'https://saartikshoret.co.il/technology',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/openAI.png'
+        image: 'static/project_icons/Enterprise_telecom_system_architecture_visualizati_ae1c94f5f1.jpeg'
       },
       {
         id: 3,
@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
 
 
