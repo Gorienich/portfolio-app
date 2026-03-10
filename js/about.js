@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'Systems orchestration combining AI pipelines, automation workflows,CRM operations and analytics reporting into a unified platform.',
         liveLink: 'https://github.com/Gorienich',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/Oop.jpg'
+        image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
       }
     ],
     all: []
@@ -152,5 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
 
