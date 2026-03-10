@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'Business website and operational ecosystem for a sales and telemarketing organization with CRM-driven positioning and service pages.',
         liveLink: 'https://saartikshoret.co.il/',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/smeta.png'
+        image: 'static/project_icons/Saar Desktop work Logo.jpeg'
       },
       {
         id: 2,
@@ -152,4 +152,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
