@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       {
         id: 7,
-        name: 'Legacy GitHub Projects',
+        name: 'Automation & AI Architecture',
         category: 'Web & content',
-        description: 'Earlier Java, Python and web prototypes that show my development foundation and technical range.',
+        description: 'Systems orchestration combining AI pipelines, automation workflows,CRM operations and analytics reporting into a unified platform.',
         liveLink: 'https://github.com/Gorienich',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/Oop.jpg'
@@ -152,3 +152,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
