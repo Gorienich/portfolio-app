@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     business: [
       {
         id: 1,
-        name: 'Saar Communications',
+        name: 'Saar Tikshoret',
         category: 'Business systems',
-        description: 'Business website and operational ecosystem for a sales and telemarketing organization with CRM-driven positioning and service pages.',
+        description: [
+          'Business website and operational ecosystem for a sales and telemarketing organization with CRM-driven positioning, service pages and digital business presence.'
+        ],
         liveLink: 'https://saartikshoret.co.il/',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/Saar Desktop work Logo.jpeg'
@@ -39,7 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
         id: 2,
         name: 'My Space CRM / Technology',
         category: 'Business systems',
-        description: 'CRM-oriented technology presentation covering sales operations, dashboards, lead workflows and business tooling direction.',
+        description: [
+          'CRM-oriented technology presentation covering sales operations, dashboards, lead workflows and business tooling direction.'
+        ],
         liveLink: 'https://saartikshoret.co.il/technology',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/Enterprise_telecom_system_architecture_visualizati_ae1c94f5f1.jpeg'
@@ -48,7 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
         id: 3,
         name: 'HOT Sales',
         category: 'Business systems',
-        description: 'Commercial website and content system focused on HOT packages, comparison pages and lead-generation journeys.',
+        description: [
+          'Commercial website and content system focused on HOT packages, comparison pages and lead-generation journeys.'
+        ],
         liveLink: 'https://hot-sales.co.il/',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
@@ -59,7 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
         id: 4,
         name: 'Endpoint Lockdown Workflow',
         category: 'Security & IT',
-        description: 'Secure workstation design for call-center environments balancing strong restrictions with working access for Pulse, Citrix, SIP and admin recovery paths.',
+        description: [
+          'Secure workstation design for call-center environments balancing strong restrictions with working access for Pulse, Citrix, SIP and admin recovery paths.'
+        ],
         liveLink: 'https://saartikshoret.co.il/technology',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/python1.png'
@@ -68,7 +76,9 @@ document.addEventListener('DOMContentLoaded', function () {
         id: 5,
         name: 'IT Operations & Access Reliability',
         category: 'Security & IT',
-        description: 'Hands-on user environment support across VPN, Citrix, access troubleshooting, workstation policy control and business continuity.',
+        description: [
+          'Hands-on user environment support across VPN, Citrix, access troubleshooting, workstation policy control and business continuity.'
+        ],
         liveLink: 'https://saartikshoret.co.il/about',
         githubLink: 'https://github.com/Gorienich',
         image: 'static/project_icons/python2.png'
@@ -79,19 +89,28 @@ document.addEventListener('DOMContentLoaded', function () {
         id: 6,
         name: 'Saar Tikshoret Magazine',
         category: 'Web & content',
-        description: 'Content platform for guides, sales insights, customer service knowledge and digital growth content in a business publishing format.',
+        description: [
+          'Business publishing platform for guides, sales insights, customer service knowledge and structured content operations.',
+          'Represents the content layer of the ecosystem, where educational pages, service-oriented writing and digital growth materials support brand visibility and business communication.'
+        ],
         liveLink: 'https://saartikshoret.co.il/magazine',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/Aipowered_editorial_workflow_architecture_a_centra_83411fc15c.jpeg'
+        image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
       },
       {
         id: 7,
         name: 'Automation & AI Architecture',
         category: 'Web & content',
-        description: 'Systems orchestration combining AI pipelines, automation workflows,CRM operations and analytics reporting into a unified platform.',
+        description: [
+          'This layer represents how my systems work together in real business environments.',
+          'I design connected operational ecosystems where AI pipelines, workflow automation, CRM processes and analytics modules are orchestrated as one structured platform. Instead of building isolated tools, I focus on creating reliable environments where content generation, lead operations, reporting logic and business workflows support each other through centralized orchestration.',
+          'The architecture reflects my current direction: practical systems thinking, automation-first design and infrastructure that serves real operational teams. It combines AI-driven content workflows, n8n orchestration, CRM handling, reporting pipelines and controlled execution logic into one stable and scalable model.',
+          'This is the point where automation, AI, security and operations stop being separate projects and become one working ecosystem.'
+        ],
         liveLink: 'https://github.com/Gorienich',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
+        image: 'static/project_icons/Technology_platform_dashboard_for_crm_operations_m_27248c0d10.jpeg',
+        wide: true
       }
     ],
     all: []
@@ -113,6 +132,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function createDescriptionMarkup(description) {
+    const descriptionArray = Array.isArray(description) ? description : [description];
+    return descriptionArray
+      .map((paragraph) => `<p>${paragraph}</p>`)
+      .join('');
+  }
+
   function displayProjects() {
     const projectsGrid = document.getElementById('projects-grid');
     if (!projectsGrid) return;
@@ -123,12 +149,20 @@ document.addEventListener('DOMContentLoaded', function () {
       const projectItem = document.createElement('article');
       projectItem.classList.add('project-item');
 
+      if (project.wide) {
+        projectItem.classList.add('project-item--wide');
+      }
+
       projectItem.innerHTML = `
-        <img class="project-image" src="${project.image}" alt="${project.name}">
+        <div class="project-image-wrapper">
+          <img class="project-image" src="${project.image}" alt="${project.name}">
+        </div>
         <div class="project-body">
           <span class="project-badge">${project.category}</span>
           <h3>${project.name}</h3>
-          <p>${project.description}</p>
+          <div class="project-text">
+            ${createDescriptionMarkup(project.description)}
+          </div>
           <div class="project-links">
             <a href="${project.liveLink}" target="_blank" rel="noopener">Open link</a>
             <a href="${project.githubLink}" target="_blank" rel="noopener">GitHub</a>
@@ -152,11 +186,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
-
-
-
-
-
-
-
-
