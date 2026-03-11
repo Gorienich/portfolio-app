@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
         liveLink: 'https://saartikshoret.co.il/magazine',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/A_futuristic_enterprise_ai_orchestration_platform__e59e77a569.jpeg'
+        image: 'static/project_icons/Aipowered_editorial_workflow_architecture_a_centra_83411fc15c.jpeg'
       },
       {
         id: 7,
@@ -186,3 +186,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
