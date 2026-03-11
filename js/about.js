@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
         liveLink: 'https://github.com/Gorienich',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/Technology_platform_dashboard_for_crm_operations_m_27248c0d10.jpeg',
+        image: 'static/project_icons/A_cinematic_enterprise_technology_scene_showing_th_delpmaspu (2).png',
         wide: true
       }
     ],
@@ -186,4 +186,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
