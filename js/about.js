@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         description: 'Content platform for guides, sales insights, customer service knowledge and digital growth content in a business publishing format.',
         liveLink: 'https://saartikshoret.co.il/magazine',
         githubLink: 'https://github.com/Gorienich',
-        image: 'static/project_icons/todoListReact.png'
+        image: 'static/project_icons/Technology_platform_dashboard_for_crm_operations_m_27248c0d10.jpeg'
       },
       {
         id: 7,
@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
 
 
