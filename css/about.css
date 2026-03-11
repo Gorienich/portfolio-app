@@ -200,7 +200,7 @@ main {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -211,19 +211,42 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(158, 252, 255, 0.28);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.28);
+}
+
+.project-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
+  pointer-events: none;
 }
 
 .project-image {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;
 }
 
 .project-body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .project-badge {
@@ -239,11 +262,20 @@ main {
 
 .project-body h3 {
   font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 0;
 }
 
 .project-body p {
   color: rgba(255,255,255,0.84);
-  line-height: 1.7;
+  line-height: 1.72;
+  margin: 0;
+}
+
+.project-body .project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
 }
 
 .project-links {
@@ -251,6 +283,7 @@ main {
   gap: 0.7rem;
   flex-wrap: wrap;
   margin-top: auto;
+  padding-top: 0.2rem;
 }
 
 .project-links a {
@@ -261,6 +294,47 @@ main {
 
 .project-links a:hover {
   color: #9efcff;
+}
+
+.project-item--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(320px, 430px) 1fr;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+.project-item--wide .project-image-wrapper {
+  height: 100%;
+}
+
+.project-item--wide .project-image {
+  height: 100%;
+  min-height: 360px;
+}
+
+.project-item--wide .project-body {
+  padding: 1.6rem 1.5rem 1.6rem 1.6rem;
+  justify-content: center;
+}
+
+.project-item--wide .project-badge {
+  margin-bottom: 0.15rem;
+}
+
+.project-item--wide h3 {
+  font-size: clamp(1.7rem, 2.4vw, 2.2rem);
+  margin-bottom: 0.2rem;
+}
+
+.project-item--wide .project-text p {
+  font-size: 1rem;
+  line-height: 1.85;
+  max-width: 920px;
+}
+
+.project-item--wide .project-links {
+  margin-top: 0.4rem;
 }
 
 .scroll-to-top {
@@ -302,6 +376,20 @@ main {
     height: 240px;
     margin: 0 auto;
   }
+
+  .project-item--wide {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .project-item--wide .project-image {
+    min-height: 240px;
+    height: 240px;
+  }
+
+  .project-item--wide .project-body {
+    padding: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -320,5 +408,13 @@ main {
 
   .icons-list {
     grid-template-columns: 1fr;
+  }
+
+  .project-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-item--wide .project-text p {
+    font-size: 0.96rem;
   }
 }
