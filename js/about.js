@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     business: [
       {
         id: 1,
-        name: 'Saar Tikshoret',
+        name: 'Saar Communications',
         category: 'Business systems',
         description: 'Business website and operational ecosystem for a sales and telemarketing organization with CRM-driven positioning and service pages.',
         liveLink: 'https://saartikshoret.co.il/',
@@ -152,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   displayProjects();
 });
+
 
 
 
