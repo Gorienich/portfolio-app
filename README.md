@@ -1,4 +1,8 @@
-# Egor Grebenuk
+# Egor Grebenuk  
+AI Architecture | Automation Engineering | Security  
+
+🌍 Languages:  
+🇬🇧 English | 🇷🇺 [Русский](./RU_README.md) | 🇮🇱 [עברית](./HE_README.md)
 
 ### AI Architecture | Automation Engineering | Security Infrastructure
 
