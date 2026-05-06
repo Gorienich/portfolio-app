@@ -1,192 +1,142 @@
-Egor Grebenuk — Systems, Security & Automation Engineer
+# Egor Grebenuk
 
-Welcome to my portfolio.
+### AI Architecture | Automation Engineering | Security Infrastructure
 
-This repository presents projects that reflect my current direction: building secure operational systems, automation workflows and business platforms that support real production environments.
+I design and build secure automation systems that power real business operations.
 
-My work focuses on the intersection between:
+My work sits at the intersection of **AI-driven workflows, infrastructure reliability, and security** — where systems must not only function, but operate continuously under real-world conditions.
 
-Security
+---
 
-Automation
+## What I Do
 
-Infrastructure reliability
+I help businesses move from manual, fragile processes to **automated, reliable, and secure operational systems**.
 
-Business systems
+This includes:
 
-AI-assisted workflows
+* Designing **AI-assisted automation architectures**
+* Building **n8n-based orchestration systems**
+* Securing **endpoints and operational environments**
+* Creating **business platforms that support daily operations**
+* Integrating **CRM, reporting, and data pipelines**
 
-The goal is not just writing code — but designing systems that operate reliably in real business environments.
+The focus is always the same:
+**systems that work every day — without failure.**
 
-Core Areas of Work
-Security & Endpoint Control
+---
 
-Designing controlled workstation environments for operational teams.
+## Core Expertise
 
-Projects include:
+### AI Architecture
 
-Endpoint lockdown policies
+Designing intelligent workflows where AI supports decision-making, data processing, and operational efficiency.
 
-Controlled application access
+### Automation Engineering
 
-VPN / Citrix secure environments
+Building automation pipelines that connect tools, eliminate manual work, and streamline business processes.
 
-Zero-trust oriented workstation configuration
+### Security Infrastructure
 
-Admin recovery and rollback mechanisms
+Implementing controlled environments using policies, access control, and endpoint protection without breaking usability.
 
-These systems are designed for environments where security cannot break daily operations.
+### Operational Systems
 
-IT Operations & Access Reliability
+Developing systems used by real teams — sales, support, and operations — where stability is critical.
 
-Maintaining stable working environments for teams relying on:
+---
 
-VPN infrastructure
+## Business Impact
 
-Citrix environments
+* Reduced manual workload through automation systems
+* Built secure environments for operational teams
+* Designed infrastructures supporting daily business activity
+* Improved reliability of internal tools and workflows
+* Enabled scalable and controlled business processes
 
-SIP telephony systems
+---
 
-user workstation policies
+## Selected Projects
 
-access troubleshooting and system continuity
-
-The objective is reliable daily operation, not just technical configuration.
-
-Automation & AI-Driven Workflows
-
-Building orchestration systems where multiple operational tools interact.
-
-Examples include:
-
-automation pipelines using n8n
-
-AI-assisted operational workflows
-
-CRM integrations
-
-reporting pipelines with Google Sheets and Looker Studio
-
-internal data collection and analytics flows
-
-The goal is creating systems where processes automate themselves.
-
-Business Systems Development
-
-Developing web platforms and operational ecosystems for business teams.
-
-Projects include:
-
-Saar Tikshoret
+### Saar Tikshoret
 
 https://saartikshoret.co.il
 
-Business website and operational ecosystem supporting:
+Business platform and operational ecosystem supporting a telecom sales organization.
 
-sales organization infrastructure
+* Built system structure for sales operations
+* Integrated workflows and service architecture
+* Supported lead generation and content systems
 
-CRM oriented workflows
+---
 
-content systems and service pages
-
-lead generation architecture
-
-HOT Sales
+### HOT Sales
 
 https://hot-sales.co.il
 
-Commercial platform focused on:
+Commercial platform focused on telecom offers and customer acquisition.
 
-telecom packages
+* Developed conversion-oriented landing flows
+* Structured lead generation system
+* Supported sales funnel efficiency
 
-comparison pages
+---
 
-conversion-oriented landing flows
-
-My Space CRM / Technology
+### Internal CRM / Technology Direction
 
 https://saartikshoret.co.il/technology
 
-Technology presentation of internal CRM direction including:
+Internal system architecture and CRM direction.
 
-sales workflows
+* Designed operational workflows
+* Built reporting structure and dashboards
+* Created system foundation for scaling operations
 
-reporting dashboards
+---
 
-operational system architecture
+## Technologies & Tools
 
-Saar Tikshoret Magazine
+**Automation & AI**
+n8n, AI workflows, data pipelines
 
-https://saartikshoret.co.il/magazine
+**Infrastructure & Security**
+Windows environments, GPO, SRP, VPN, Citrix
 
-Content platform focused on:
+**Development**
+JavaScript, React, Node.js, Python, PHP
 
-customer service insights
+**Analytics & Reporting**
+Google Sheets, Looker Studio
 
-sales knowledge
+---
 
-operational guides
+## Approach
 
-digital growth content
+I don’t build prototypes.
 
-Technology Stack
+I build systems where:
 
-Core technologies used across projects:
+* teams rely on daily access
+* automation must run continuously
+* data must be accurate
+* security must not interrupt operations
 
-Security & Infrastructure
+The goal is simple:
 
-Action1
+**stable, automated, and secure business environments.**
 
-FortiGate
+---
 
-Windows administration
+## Services
 
-Citrix
+* AI & Automation Architecture
+* n8n Setup (local / cloud)
+* Business Process Automation
+* Secure Endpoint Configuration (GPO / SRP)
+* CRM & Operational Systems
+* Infrastructure Consulting
 
-Pulse Secure / VPN environments
+---
 
-MicroSIP
+## Contact
 
-Automation & Systems
-
-n8n workflow automation
-
-Google Sheets automation
-
-Looker Studio analytics
-
-AI-assisted operational pipelines
-
-Development
-
-JavaScript
-
-HTML / CSS
-
-React
-
-Node.js
-
-Python
-
-PHP
-
-Philosophy
-
-I focus on systems that must work every day.
-
-Not prototypes — but environments where:
-
-agents must log in
-
-calls must work
-
-CRM must respond
-
-automation must run
-
-reporting must update
-
-and security must not break operations
-
-The intersection of security, automation and operational stability is where most of my work happens.
+If you are looking to automate operations, improve reliability, or secure your infrastructure — feel free to reach out.
