@@ -1,0 +1,67 @@
+[
+  {
+    "id": "google-workspace-installations-automation",
+    "title": "Connecting Google Apps Script Automations with Looker Studio Reports",
+    "category": "Google Workspace",
+    "date": "2026-06-22",
+    "readingTime": "7 min",
+    "summary": "How I built a Google Workspace automation flow that archives installation records, organizes Drive files, writes audit logs, and prepares clean Google Sheets data for Looker Studio reporting.",
+    "coverImage": "static/articles_img/Google_workspace/driveBackupReports.png",
+    "tags": [
+      "Google Apps Script",
+      "Google Sheets",
+      "Google Drive",
+      "Looker Studio",
+      "Automation"
+    ],
+    "repo": {
+      "label": "GitHub — Installations Automation System",
+      "url": "https://github.com/Gorienich/Drive-Automations-/tree/main/data-and%20flow/WorkDayInstalations"
+    },
+    "sections": [
+      {
+        "heading": "Why I Built This Automation",
+        "content": [
+          "The original process was manual: installation rows were managed inside Google Sheets, archive files had to be organized by month, and the workspace needed to be prepared again for the next working day.",
+          "Manual workflows like this create repeated work, risk of missed records, and poor visibility when something fails. My goal was to create a stable Google-native automation that could run every day with minimal maintenance."
+        ]
+      },
+      {
+        "heading": "Automation Architecture",
+        "content": [
+          "The automation uses Google Apps Script as the execution layer, Google Sheets as the operational workspace, Google Drive as the archive storage layer, and Looker Studio as the reporting layer.",
+          "Google Apps Script handles the operational workflow, while Looker Studio handles dashboards, charts and summaries."
+        ]
+      },
+      {
+        "heading": "What the Script Does",
+        "list": [
+          "Validates the workspace spreadsheet, sheet names, Drive folder and timezone.",
+          "Archives completed installation rows into the correct monthly archive file.",
+          "Creates year and month folders/files in Google Drive when needed.",
+          "Writes audit log entries for visibility and troubleshooting.",
+          "Resets the workspace and creates fresh rows for the next working day.",
+          "Sends email alerts only when errors occur."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Google Apps Script — Extend Google Sheets",
+        "url": "https://developers.google.com/apps-script/guides/sheets"
+      },
+      {
+        "label": "Google Apps Script — Installable Triggers",
+        "url": "https://developers.google.com/apps-script/guides/triggers/installable"
+      },
+      {
+        "label": "Google Apps Script — DriveApp",
+        "url": "https://developers.google.com/apps-script/reference/drive/drive-app"
+      },
+      {
+        "label": "Looker Studio — Connect to Google Sheets",
+        "url": "https://docs.cloud.google.com/data-studio/connect-to-google-sheets"
+      }
+    ]
+  }
+]
