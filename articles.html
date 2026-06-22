@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Articles | Egor Grebenuk</title>
+  <meta name="description" content="Technical articles, research notes, comparisons, discoveries and open-source references by Egor Grebenuk." />
+  <meta name="author" content="Egor Grebenuk" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/articles.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="global-header"></header>
+
+  <main class="articles-shell">
+
+    <section class="articles-hero">
+      <p class="section-kicker">Knowledge Base</p>
+      <h1>Articles & Technical Notes</h1>
+      <p>
+        Discoveries, comparisons, troubleshooting notes, open-source references,
+        automation workflows and infrastructure research collected from real learning and hands-on work.
+      </p>
+    </section>
+
+    <section class="articles-controls">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input id="articleSearch" type="text" placeholder="Search by title, tag, category or source..." />
+      </div>
+
+      <div class="category-filter" id="categoryFilter">
+        <button class="active" data-category="All">All</button>
+        <button data-category="Networking">Networking</button>
+        <button data-category="Automation">Automations</button>
+        <button data-category="Google Workspace">Google Workspace</button>
+        <button data-category="IT Operations">IT Operations</button>
+        <button data-category="Comparisons">Comparisons</button>
+        <button data-category="Open Source">Open Source</button>
+        <button data-category="Research Notes">Research Notes</button>
+      </div>
+    </section>
+
+    <section class="featured-article" id="featuredArticle"></section>
+
+    <section class="articles-grid" id="articlesGrid"></section>
+
+    <section class="empty-state" id="emptyState">
+      <h2>No articles found</h2>
+      <p>Try another search term or category.</p>
+    </section>
+
+  </main>
+
+  <div id="contact">
+    <footer id="global-footer"></footer>
+  </div>
+
+  <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/articles-data.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/loadHeader.js"></script>
+  <script src="js/loadFooter.js"></script>
+</body>
+</html>
