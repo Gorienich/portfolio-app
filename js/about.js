@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
     business: [
       {
         id: 2,
-        name: 'Installations Automation System',
+        name: 'Automation backup System',
         category: 'Automation & Operations',
         diagram: automationDiagramSVG,
-        problem: 'Manual daily archiving of installation packages and workspace staging led to directory clutter, inconsistent storage schedules, and lack of logging across corporate Google Drive shares.',
+        problem: 'Manual daily work processes, backup preparation, morning workspace setup, and reporting checks created repetitive operational work, inconsistent Drive organization, and limited visibility into completed tasks.',
         solution: 'Engineered a Google Apps Script pipeline to automate daily file staging, generate timestamped monthly archives, write immutable audit logs to Google Sheets, and dispatch instant email warnings strictly upon script execution errors to ensure zero silent failures.',
         techStack: ['Google Apps Script', 'Google Sheets', 'Google Drive API', 'Audit Logs', 'IT Automation'],
         impact: [
@@ -109,16 +109,16 @@ document.addEventListener('DOMContentLoaded', function () {
     security: [
       {
         id: 1,
-        name: 'Call Center Network Diagnostic Tool',
+        name: 'Network Telemetry & MTU Analysis',
         category: 'Infrastructure & Networking',
         diagram: networkDiagramSVG,
-        problem: 'Intermittent CRM freezes, VPN dropouts, and Citrix session reconnections disrupted call center operations, with no telemetry on network paths, MTU sizes, or DNS response times.',
-        solution: 'Developed a PowerShell diagnostic utility that executes background network telemetry sweeps, analyzing ICMP packet loss, DNS latency, Citrix port connectivity (1494/2598), VPN route changes, and automated MTU size tests (ping with DF flag).',
+        problem: 'Intermittent CRM freezes, Citrix session reconnections, and connectivity disruptions affected daily operations, while limited visibility into network paths, packet loss, latency, and MTU behavior made root-cause analysis difficult.',
+        solution: 'Developed a PowerShell-based network diagnostic utility that continuously monitors connectivity, collects network telemetry, validates Citrix and SIP service ports, performs route and hop analysis, captures PathPing packet-loss statistics, executes MTU fragmentation tests, and automatically gathers diagnostic evidence when failures are detected.',
         techStack: ['PowerShell', 'FortiGate IPsec', 'Citrix Receiver', 'Ivanti VPN', 'VoIP / SIP', 'MTU Diagnostics'],
         impact: [
           'Improved troubleshooting visibility',
           'Standardized diagnostic evidence collection',
-          'Reduced repetitive manual work'
+          'Accelerated root-cause investigation'
         ],
         links: [
           { text: 'View Source Code', url: 'https://github.com/Gorienich/Networking' },

@@ -50,7 +50,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
             </div>
             <h4>Automations</h4>
-            <p>Apps Script, n8n, Sheets, Drive, Looker Studio and workflow management.</p>
+            <p>Scripts, n8n, API's, Drive and AI workflow management.</p>
           </div>
         </div>
 
@@ -63,16 +63,24 @@
           <h1>Egor Grebenuk</h1>
           <h2>IT Automation & Infrastructure Engineer</h2>
           <p>
-            I design and support IT infrastructure and operations where reliability is essential: workstation hardening, network troubleshooting (FortiGate, Citrix, VPN, VoIP, MTU diagnostics), call-center operations, and workflow automation.
+          I believe continuous learning is the most valuable skill an engineer can develop. Technologies change, tools evolve, and environments become more complex, but curiosity, discipline, and the ability to keep learning remain constant.
           </p>
           <p>
-            I focus on creating robust, repeatable scripting solutions using PowerShell and Google Apps Script that eliminate manual errors, gather clear diagnostic evidence, and help administrative teams maintain stable execution loops.
+           My goal is not simply to solve technical problems. It is to understand why they happen, improve the systems behind them, and use that knowledge to build more reliable and efficient solutions in the future.
           </p>
+          <p>
+            Good infrastructure should be invisible, repetitive work should be automated, and every incident is an opportunity to learn something new.
+          </p>
+          
+
+          <!--
           <div class="about-links">
-            <a href="Egor Grebenuk CV he.pdf" target="_blank">View / Download CV</a>
-            <a href="https://saartikshoret.co.il/" target="_blank" rel="noopener">Saar Tikshoret Operations</a>
+             <a href="Egor Grebenuk CV he.pdf" target="_blank">View / Download CV</a> 
+            <a href="https://saartikshoret.co.il/" target="_blank" rel="noopener">Operations</a>
             <a href="https://saartikshoret.co.il/technology" target="_blank" rel="noopener">CRM Technology</a>
+            <a href="https://saartikshoret.co.il/magazine" target="_blank" rel="noopener">Articles </a>
           </div>
+          -->
         </div>
       </div>
     </section>
@@ -81,7 +89,7 @@
   <div class="section-heading">
     <p class="section-kicker">Systems Stack</p>
     <h2>Technical Expertise</h2>
-    <p>Each topic represents real learning, hands-on practice, troubleshooting work, and achievements.</p>
+    <p>Each topic represents real learning, hands-on practice, troubleshooting work, and long-term professional direction.</p>
   </div>
 
   <div class="expertise-grid">
@@ -93,13 +101,7 @@
         <summary>FortiGate</summary>
         <div class="topic-content">
           <p>
-            Hands-on exposure to FortiGate environments, firewall policy concepts,
-            VPN behavior, routing paths, gateway checks and operational troubleshooting.
-          </p>
-          <p>
-            I used FortiGate as part of real connectivity investigations where the goal was
-            to understand whether failures came from the endpoint, local network, firewall,
-            ISP, VPN path or remote service.
+            My exposure to FortiGate comes from real connectivity and operations work: firewall behavior, VPN paths, routing decisions, gateway checks, and troubleshooting traffic flow between users, local networks, providers, and remote services.
           </p>
         </div>
       </details>
@@ -108,8 +110,7 @@
         <summary>VPN</summary>
         <div class="topic-content">
           <p>
-            Studied VPN behavior from an operations perspective: tunnel overhead,
-            connectivity drops, authentication paths, latency impact and application stability.
+            I study VPN behavior from an infrastructure perspective: tunnel overhead, route behavior, connection drops, latency impact, MTU limitations, and how VPN conditions affect real applications such as Citrix, CRM, and VoIP.
           </p>
           <p>
             In my Citrix troubleshooting project, VPN encapsulation overhead was connected
@@ -119,15 +120,13 @@
       </details>
 
       <details class="topic-item">
-        <summary>MTU Analysis</summary>
+        <summary>Networking Lab</summary>
         <div class="topic-content">
           <p>
-            Built practical MTU testing into a PowerShell diagnostic tool using packet sizes,
-            DF behavior, PathPing evidence and connectivity comparison.
+           I build self-learning labs with GNS3, Packet Tracer, Wireshark, VMware, and Hyper-V to practice routing, switching, VPN, firewall logic, traffic analysis, and troubleshooting scenarios without touching production devices
           </p>
           <p>
-            This helped identify cases where normal ping succeeded but larger packets failed,
-            causing application-level instability in Citrix sessions.
+            After completing CCNA, my direction is deeper networking, CCNP-level practice, security fundamentals, pentesting labs, and long-term growth toward advanced network and cybersecurity expertise.
           </p>
         </div>
       </details>
@@ -136,30 +135,17 @@
         <summary>VoIP</summary>
         <div class="topic-content">
           <p>
-            Worked with VoIP/SIP connectivity checks, softphone stability, SIP service
-            reachability and call-center communication reliability.
+            I work with VoIP and SIP from an operational reliability perspective: softphone connectivity, SIP reachability, call-center communication stability, port checks, and the relationship between network behavior and voice quality.
           </p>
         </div>
       </details>
 
-      <details class="topic-item">
-        <summary>Routing</summary>
-        <div class="topic-content">
-          <p>
-            Practiced routing fundamentals through CCNA learning, Packet Tracer labs,
-            route tables, default gateways, traceroute behavior and path analysis.
-          </p>
-        </div>
-      </details>
 
       <details class="topic-item">
         <summary>Network Troubleshooting</summary>
         <div class="topic-content">
           <p>
-            Built a structured troubleshooting approach based on evidence collection:
-            ping, latency, TCP port checks, DNS, route print, traceroute, PathPing,
-            netstat and MTU testing.
-          </p>
+           My troubleshooting philosophy is based on understanding the full network path before making assumptions. I collect evidence using tools such as PowerShell, ping, tracert, PathPing, TCP port checks, DNS checks, logs, and MTU tests.</p>
         </div>
       </details>
     </div>
@@ -171,38 +157,48 @@
         <summary>PowerShell</summary>
         <div class="topic-content">
           <p>
-            Built PowerShell scripts for network diagnostics, monitoring loops, TCP port
-            validation, log collection, CSV output and automatic diagnostic dumps.
+          PowerShell became one of my primary tools because it helps me understand Windows systems, collect evidence, automate repetitive tasks, and build repeatable troubleshooting workflows..
+          </p>
+          <p>
+            What started with simple administrative commands evolved into scripts for diagnostics, monitoring, reporting, TCP validation, log collection, and operational visibility.
           </p>
         </div>
       </details>
 
-      <details class="topic-item">
-        <summary>Google Apps Script</summary>
+       <details class="topic-item">
+        <summary>Action 1 | Endpoint Operations</summary>
         <div class="topic-content">
           <p>
-            Created Google Apps Script automation for scheduled archive workflows,
-            Google Sheets processing, Drive folder management, audit logs and error alerts.
+            I use endpoint management concepts for patch management, workstation control, software deployment, policy enforcement, and operational automation across user environments.
           </p>
         </div>
       </details>
-
-      <details class="topic-item">
-        <summary>JavaScript</summary>
-        <div class="topic-content">
-          <p>
-            Used JavaScript logic inside Apps Script and portfolio projects to build
-            automation flows, data processing and user interface behavior.
-          </p>
-        </div>
-      </details>
-
+  
       <details class="topic-item">
         <summary>Automation Workflows</summary>
         <div class="topic-content">
           <p>
-            Focused on converting repetitive manual operations into stable, repeatable
-            workflows with validation, logging, scheduling and error visibility.
+            My automation focus is moving from single scripts into full workflow orchestration. I explore n8n, APIs, webhooks, databases, Docker, GitHub integrations, environment security, and process automation.
+          </p>
+          <p>
+            The goal is to connect systems together, reduce manual work, improve reliability, and keep every process observable and maintainable.
+          </p>
+        </div>
+      </details>
+
+      <details class="topic-item">
+        <summary>AI & LLM Workflows</summary>
+        <div class="topic-content">
+          <p>
+           I explore AI as part of modern automation: OpenAI, Anthropic, Hugging Face, LangChain, LlamaIndex, local models, prompt engineering, vector databases, and AI-assisted operational workflows. </p>
+        </div>
+      </details>
+
+       <details class="topic-item">
+        <summary>MCP & Integration Research</summary>
+        <div class="topic-content">
+          <p>
+           I am learning MCP concepts, local and cloud integrations, Docker-based environments, API connectivity, and how modern tools can securely communicate with external systems and automation agents.
           </p>
         </div>
       </details>
@@ -212,21 +208,10 @@
       <h3>Systems & Operations</h3>
 
       <details class="topic-item">
-        <summary>Citrix</summary>
-        <div class="topic-content">
-          <p>
-            Investigated Citrix CRM session instability, ICA/CGP connectivity,
-            reconnect behavior, TCP ports 1494/2598 and application impact from network issues.
-          </p>
-        </div>
-      </details>
-
-      <details class="topic-item">
         <summary>Windows Administration</summary>
         <div class="topic-content">
           <p>
-            Worked with Windows workstations, PowerShell, network configuration,
-            troubleshooting commands, logs and operational support workflows.
+            I work with Windows workstations, configuration, troubleshooting commands, user support, logs, PowerShell, system behavior, and operational support processes.
           </p>
         </div>
       </details>
@@ -235,18 +220,16 @@
         <summary>IT Operations</summary>
         <div class="topic-content">
           <p>
-            Supported operational environments where stability, documentation,
-            fast troubleshooting and repeatable processes are critical.
+            My operations mindset is focused on stability, documentation, fast troubleshooting, user impact, repeatable processes, and improving how daily technical work is handled.
           </p>
         </div>
       </details>
 
       <details class="topic-item">
-        <summary>CRM Operations</summary>
+        <summary>CRM Operations and support</summary>
         <div class="topic-content">
           <p>
-            Worked around CRM operational flows, call-center usage patterns,
-            business continuity needs and automation opportunities.
+            I work around CRM operational flows, user support, business continuity, troubleshooting, usage patterns, process improvement, and automation opportunities in real business environments.
           </p>
         </div>
       </details>
@@ -256,11 +239,10 @@
       <h3>Google Workspace</h3>
 
       <details class="topic-item">
-        <summary>Google Sheets</summary>
+        <summary>Google Admin & Console</summary>
         <div class="topic-content">
           <p>
-            Built spreadsheet-based workflows for daily installation tracking,
-            archive preparation, reporting data and operational monitoring.
+            I work with Google Workspace processes such as permissions, quotas, analytics, connected services, workspace configuration, and operational needs around business environments.
           </p>
         </div>
       </details>
@@ -269,28 +251,16 @@
         <summary>Google Drive</summary>
         <div class="topic-content">
           <p>
-            Automated folder and file organization by year and month using Google Apps Script
-            to create predictable archive structures.
+           I focus on Drive structure, folder organization, access control, file lifecycle, backup logic, and creating predictable storage structures for operational work.
           </p>
         </div>
       </details>
 
       <details class="topic-item">
-        <summary>Looker Studio</summary>
+        <summary>Google Business & SEO Operations</summary>
         <div class="topic-content">
           <p>
-            Used Looker Studio as a reporting layer over structured Google Sheets data,
-            separating operational automation from visual reporting.
-          </p>
-        </div>
-      </details>
-
-      <details class="topic-item">
-        <summary>Google Business</summary>
-        <div class="topic-content">
-          <p>
-            Managed Google Workspace / business-side workflows where structured data,
-            access, organization and automation support daily operations.
+            I explore Google Business tools, sitemaps, robots.txt, schema structure, page speed, indexing, and technical configuration that supports visibility and operational needs.
           </p>
         </div>
       </details>
@@ -303,8 +273,7 @@
         <summary>Meta Ads</summary>
         <div class="topic-content">
           <p>
-            Worked with Meta advertising workflows, campaign structure, targeting logic,
-            creative testing and recruitment-oriented campaign operations.
+            I work with Meta advertising workflows, campaign structure, targeting logic, A/B creative testing, recruitment campaigns, and performance-oriented campaign operations.
           </p>
         </div>
       </details>
@@ -313,8 +282,7 @@
         <summary>Meta Development</summary>
         <div class="topic-content">
           <p>
-            Explored Meta business tools, page setup, verification flows, catalog logic
-            and technical limitations around business identity and platform configuration.
+            I explore Meta business tools, page setup, verification flows, catalog logic, business identity, platform configuration, and technical limitations inside Meta environments.
           </p>
         </div>
       </details>
@@ -323,9 +291,7 @@
         <summary>Meta Management</summary>
         <div class="topic-content">
           <p>
-            Managed operational aspects of Meta business presence, page settings,
-            campaign assets and hiring-related marketing workflows.
-          </p>
+            I manage operational aspects of Meta business presence, page settings, campaign assets, content structure, and hiring-related marketing workflows.</p>
         </div>
       </details>
     </div>
