@@ -86,26 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Project database structure
   const projectData = {
-    business: [
-      {
-        id: 2,
-        name: 'Automation backup System',
-        category: 'Automation & Operations',
-        diagram: automationDiagramSVG,
-        problem: 'Manual daily work processes, backup preparation, morning workspace setup, and reporting checks created repetitive operational work, inconsistent Drive organization, and limited visibility into completed tasks.',
-        solution: 'Engineered a Google Apps Script pipeline to automate daily file staging, generate timestamped monthly archives, write immutable audit logs to Google Sheets, and dispatch instant email warnings strictly upon script execution errors to ensure zero silent failures.',
-        techStack: ['Google Apps Script', 'Google Sheets', 'Google Drive API', 'Audit Logs', 'IT Automation'],
-        impact: [
-          'Improved archive consistency',
-          'Created audit visibility',
-          'Reduced repetitive manual work'
-        ],
-        links: [
-          { text: 'View Automation Logic', url: 'https://github.com/Gorienich/Drive-Automations-/tree/main/data-and%20flow/WorkDayInstalations' },
-          { text: 'View Source Code', url: 'https://github.com/Gorienich/Drive-Automations-/tree/main/data-and%20flow/WorkDayInstalations' }
-        ]
-      }
-    ],
     security: [
       {
         id: 1,
@@ -126,6 +106,66 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
       }
     ],
+    business: [
+      {
+        id: 2,
+        name: 'Automation backup System',
+        category: 'Automation & Operations',
+        diagram: automationDiagramSVG,
+        problem: 'Manual daily work processes, backup preparation, morning workspace setup, and reporting checks created repetitive operational work, inconsistent Drive organization, and limited visibility into completed tasks.',
+        solution: 'Engineered a Google Apps Script pipeline to automate daily file staging, generate timestamped monthly archives, write immutable audit logs to Google Sheets, and dispatch instant email warnings strictly upon script execution errors to ensure zero silent failures.',
+        techStack: ['Google Apps Script', 'Google Sheets', 'Google Drive API', 'Audit Logs', 'IT Automation'],
+        impact: [
+          'Improved archive consistency',
+          'Created audit visibility',
+          'Reduced repetitive manual work'
+        ],
+        links: [
+          { text: 'View Automation Logic', url: 'https://github.com/Gorienich/Drive-Automations-/tree/main/data-and%20flow/WorkDayInstalations' },
+          { text: 'View Source Code', url: 'https://github.com/Gorienich/Drive-Automations-/tree/main/data-and%20flow/WorkDayInstalations' }
+        ]
+      }
+    ],
+    API: [
+    {
+    id: 3,
+    name: 'Israel Address Validator',
+    category: 'API',
+    diagram: networkDiagramSVG,
+    problem:
+      'A nationwide address lookup required real-time validation against official government data. The application needed to search cities and streets across Israel, validate user input using authoritative datasets, and always reflect the latest available information without relying on static or manually maintained data.',    
+    solution:
+      'Built a lightweight Vanilla JavaScript application that integrates directly with the Israeli Government Open Data CKAN API. The system retrieves live city and street data, validates official address relationships, performs client-side house number validation, caches API responses for performance, and visualizes validated addresses in Google Maps. The architecture demonstrates how a frontend can consume and validate real-world API data while remaining easily adaptable to backend services.',
+    techStack: [
+      'Vanilla JavaScript',
+      'HTML5',
+      'CSS3',
+      'CKAN REST API',
+      'Fetch API',
+      'AbortController',
+      'localStorage',
+      'Google Maps'
+    ],
+
+    impact: [
+      'Integrated live Government Open Data',
+      'Eliminated hardcoded address datasets',
+      'Implemented reusable API validation architecture',
+      'Demonstrated scalable frontend API integration'
+    ],
+
+    links: [
+      {
+        text: 'Live Demo',
+        url: 'https://gorienich.github.io/Israel-Address-Validator/'
+      },
+      {
+        text: 'GitHub Repository',
+        url: 'https://github.com/Gorienich/Israel-Address-Validator'
+      }
+    ]
+  }
+],
     all: []
   };
 
@@ -227,11 +267,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const allBtn = document.getElementById('all');
   const businessBtn = document.getElementById('business');
   const securityBtn = document.getElementById('security');
+  const APIBtn = document.getElementById('API');
 
   if (allBtn) allBtn.addEventListener('click', () => handleCategoryChange('all'));
   if (businessBtn) businessBtn.addEventListener('click', () => handleCategoryChange('business'));
   if (securityBtn) securityBtn.addEventListener('click', () => handleCategoryChange('security'));
-
+  if (APIBtn) APIBtn.addEventListener('click', () => handleCategoryChange('API'));
+  
   // Render on load
   handleCategoryChange('all');
 });
